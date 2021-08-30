@@ -1,0 +1,169 @@
+/*Edições do header e barra de navegação*/
+
+header, .navbar
+{
+    background-color: #2ABB12;
+}
+#nav-container
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#logo{
+    width: 170px;
+}
+.navbar-brand{
+    padding: 0;
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+#navbar-links a{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+
+/*Edições do menu Hamburguer*/
+
+ul{
+    list-style: none;
+    top: 40px;
+    position: absolute;
+    width: 100%;
+}
+#img{
+    width: 30px;
+}
+#chec[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+}
+#chec[type="checkbox"]:checked ~ .hamburguer{
+    transform: translateX(500px);
+}
+#container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #38EC1B;
+}
+.hamburguer{
+    background-color: #38EC1B;
+    width: 300px;
+    height: 300px;
+    left: -500px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+#link{
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    color: white;
+}
+#link:hover{
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+#label{
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+#label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+#label span:nth-child(1){
+    top: 0;
+}
+#label span:nth-child(2){
+    top: 8px;
+}
+#label span:nth-child(3){
+    top: 16px;
+}
+#chec:checked + #label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#chec:checked + #label span:nth-child(2){
+    opacity: 0;
+}
+#chec:checked + #label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/*Edições do corpo e rodapé da página*/
+
+footer
+{
+    background-color: #2ABB12;
+    text-align: center;
+    color: white;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #B5FFA9;
+    margin: 0px;
+}
+main{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+/*Formulário da página de contatos*/
+
+.container{
+    padding: 70px 0;
+}
+textarea{
+    text-align: center;
+}
+input{
+    text-align: center;
+    border-radius: 5px;
+
+}
+#contato{
+    background-color: #38EC1B;
+    border-radius: 15%;
+    text-align: center;
+}
+
+/*Formulário da página de Cadastro*/
+
+#containerCadastro{
+    background-color: #69d857;
+    border-radius: 15px;
+    margin-right: 150px;
+
+}
+#centralizar{
+    text-align: center;
+    background-color: #2ABB12;
+    border-radius: 30px;
+}
+.label{
+    width: 80px;
+    display: inline-block;
+    margin: 5px;
+    background-color: #2ABB12;
+    text-align: center;
+    border-radius: 30px;
+}
