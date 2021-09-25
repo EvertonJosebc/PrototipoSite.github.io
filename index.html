@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
     <title>Éverton-Implementação_do_Projeto</title>
 </head>
@@ -15,7 +18,7 @@
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand">
-                    <img id="logo" src="img/logo.png" alt="Rede Real Supermercados"> A SUA MELHOR OPÇÃO É AQUI!
+                    <img id="logo" src="img/LogoRedeReal.png" alt="Rede Real Supermercados"> A SUA MELHOR OPÇÃO É AQUI!
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggle-icon"></span>
@@ -39,84 +42,140 @@
             <nav class="hamburguer">
                 <ul>
                     <li><a href="" id="link">Sobre nossa rede</a></li>
-                    <li><a href="Cadastro.html" id="link">Não possui uma conta? Então Cadastre-se Aqui!</a></li>
-                    <li><a href="" id="link">Já possui? Receba nossas Melhores ofertas direto de casa</a></li>
+                    <li><a href="Cadastro.html" id="link">Cadastre-se Aqui!</a></li>
+                    <li><a href="" id="link">Receba nossas Melhores ofertas direto de casa</a></li>
                     <li><a href="Contato.html" id="link">Trabalhe Conosco!</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="main">
+        <br>
+        <div class="container" style="background-color: #A0AA60; border-radius: 30px; text-align: center; width: 600px; height: 250px;">
+            <form action="Login" enctype="multipart/form-data">
+                <h5>LOGIN:</h5>
+                <div style="margin-bottom: 15px;">
+                    <label for="nome" id="login">Nome de Usuário: </label>
+                    <input type="text" placeholder="Nome de Usuário!"><br>
+                    <label for="senha" id="login">Senha: </label>
+                    <input type="password" placeholder="Digite sua Senha!">
+                </div>
+                <div>
+                    <a href="index.html"><button type="button" name="cadastrar" id="cadastrar" style="border-radius: 10px; color: #D56B1D; background-color: #FFF; margin-left: 354px;">Cadastrar</button></a>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="container-fluid" id="Slider">
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/melhoresprodutos.jpg" class="d-block w-100" alt="melhores produtos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>
+                                <strong>
+                                    Os melhores produtos e ofertas de toda a região.
+                                </strong>
+                            </h2>
+                            <p>
+                                <strong>
+                                    Preços imbatíveis <br>
+                                    Produtos da melhor qualidade e com mais variedades <br>
+                                    Atendimento referencia no mercado <br>
+                                    Bom para você e para o seu bolso <br>
+                                    Venha já e confira nossas OFERTAS!!! <br>
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/familia.jpg" class="img-fluid d-block w-100" alt="Familia no mercado">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2><strong>Traga sua família e encontre produtos para todas as idades no nosso Bazar.</strong></h2>
+                            <p>
+                                <strong>
+                                    Brinquedos em geral <br>
+                                    Utensílios de cozinha <br>
+                                    Artigos para aniversário <br>
+                                    Materiais escolares<br>
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/carrinho.jpg" class="img-fluid d-block w-100" alt="Carrinho e bolso cheios">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>
+                                <strong>
+                                    Tudo o que você procura já está aqui, só basta conferir,  venha já e faça suas compras, acompanhe nossas ofertas e promações.<br>
+                                </strong>
+                            </p>
+                            <h2>
+                                <strong>
+                                    Rede Real de supermercados a sua melhor opção está aqui!
+                                </strong>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </div>
         <br>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-5 col-sm-12">
-                    <img src="img/pessoas mercado.jpg" width="300px" height="180px">
+            <div class="card mb-9" style="max-width: 100%; margin-left: 20px; margin-bottom: 20px; border-radius: 30px; background-color: #A0AA60; color: #D56B1D; ">
+                <div class="row g-0">
+                <div class="col-xl-5 col-md-6 col-sm-12">
+                    <img src="img/churrasco.jpg" width="100%" height="100%" style="border-radius: 30px;">
                 </div>
-                <div class="col-xl-8 col-md-7 col-sm-12">
-                    <h3>Os melhores produtos e ofertas de toda a região.</h3>
-                    <p> Preços imbatíveis <br>
-                        Produtos da melhor qualidade e com mais variedades <br>
-                        Atendimento referencia no mercado <br>
-                        Bom para você e para o seu bolso <br>
-                        Venha já e confira nossas OFERTAS!!! <br>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <hr size="10px" color= "#38EC1B">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-5 col-sm-12">
-                    <img src="img/familia mercado.jpg" width="300px" height="180px">
-                </div>
-                <div class="col-xl-8 col-md-7 col-sm-12">
-                    <h3>Traga sua família e encontre produtos para todas as idades no nosso Bazar.</h3>
-                    <p> Brinquedos em geral <br>
-                        Utensílios de cozinha <br>
-                        Artigos para aniversário <br>
-                        Materiais escolares <br></p>
+                    <div class="col-xl-7 col-md-6 col-sm-12">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 30px;">
+                                <strong>
+                                    Chame os amigos e faça aquele churrasco!
+                                </strong>
+                            </h5>
+                            <p style="font-size: 20px;">
+                                Carnes frescas <br>
+                                Maior Variedade de opções <br>
+                                Se não encontrar em outro lugar, aqui você encontra!<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr size="10px" color= "#38EC1B">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-5 col-sm-12">
-                    <img src="img/churrasco.jpg" width="300px" height="180px">
+            <div class="card mb-9" style="max-width: 100%; margin-left: 20px; margin-bottom: 20px; border-radius: 30px; background-color: #A0AA60; color: #D56B1D;">
+                <div class="row g-0">
+                <div class="col-xl-5 col-md-6 col-sm-12">
+                    <img src="img/hortifruti.png" width="100%" height="100%" style="border-radius: 30px;">
                 </div>
-                <div class="col-xl-8 col-md-7 com-sm-12">
-                    <h3>Chame os amigos e faça aquele churrasco!</h3>
-                    <p> Carnes frescas <br>
-                        Maior Variedade de opções <br>
-                        Se não encontrar em outro lugar, aqui você encontra! <br></p>
-                </div>
-            </div>
-        </div>
-        <hr size="10px" color= "#38EC1B">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-5 col-sm-12">
-                    <img src="img/hostfruti.jpg" width="300px" height="180px">
-                </div>
-                <div class="col-xl-8 col-md-7 col-sm-12">
-                    <h3>O maior e melhor Hortifruti da região!</h3>
-                    <p> Frutas e verduras frescas <br>
-                        Maior variedade e melhor qualidade já vista na região <br>
-                        Produtos saúdaveis e sem uso de agrotóxicos <br>
-                        Tudo isso com aquele preço camarada <br></p>
-                </div>
-            </div>
-        </div>
-        <hr size="10px" color= "#38EC1B">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-5 col-sm-12">
-                    <img src="img/variedade.jpg" width="300px" height="180px">
-                </div>
-                <div class="col-xl-8 col-md-7 col-sm-12">
-                    <p>Tudo o que você procura já está aqui, só basta conferir,  venha já e faça suas compras, acompanhe nossas ofertas e promações. <br></p>
-                    <h3>Rede Real de supermercados a sua melhor opção está aqui!</h3>
+                    <div class="col-xl-7 col-md-6 col-sm-12">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 30px;">
+                                <strong>
+                                    O maior e melhor Hortifruti da região!
+                                </strong>
+                            </h5>
+                            <p style="font-size: 20px;">
+                                Carnes frescas <br>
+                                Maior Variedade de opções <br>
+                                Se não encontrar em outro lugar, aqui você encontra!<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
