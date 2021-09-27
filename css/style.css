@@ -1,4 +1,4 @@
-/*Edições do header e barra de navegação*/
+/*Edições do header e barra de navegação*//*Edições do header e barra de navegação*/
 
 header, .navbar
 {
@@ -68,7 +68,7 @@ ul{
     border-radius: 10px;
 }
 #link:hover{
-    background-color: #D56B1D;
+    background-color: #ff2600;
     color: #fDD282;
 }
 #label{
@@ -85,7 +85,7 @@ ul{
     height: 5px;
     width: 100%;
     border-radius: 30px;
-    background-color: #D56B1D;
+    background-color: #ff2600;
     transition: 0.5s ease-in-out;
 }
 #label span:nth-child(1){
@@ -123,7 +123,7 @@ body,html
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     margin: 0px;
-    color: #D56B1D;
+    color: #ff2600;
     background-image: url("../img/corpo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,13 +184,13 @@ input{
     border-radius: 30px;
 }
 input::placeholder{
-    color: #D56B1D;
+    color: #ff2600;
 }
 textarea::placeholder{
-    color: #D56B1D;
+    color: #ff2600;
 }
 button{
-    color: #D56B1D;
+    color: #ff2600;
 }
 #login{
     width: 190px;
@@ -219,16 +219,16 @@ button{
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
-    color:#a74f11;
+    color:#ff2600;
 }
 #mainSlider .carousel-caption p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     margin-bottom: 100px;
-    color:#a74f11;
+    color:#ff2600;
 
 }
 .carousel-indicators .active{
-    background-color: #D56B1D;
+    background-color: #ff2600;
 }
